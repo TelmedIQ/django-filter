@@ -17,7 +17,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 setup(
-    name='django-filter',
+    name='django-filter-legacy',
     version=version,
     description=('Django-filter is a reusable Django application for allowing'
                  ' users to filter querysets dynamically.'),
