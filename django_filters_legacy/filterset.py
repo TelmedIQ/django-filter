@@ -311,7 +311,7 @@ class BaseFilterSet(object):
     # What to do on on validation errors
     strict = STRICTNESS.RETURN_NO_RESULTS
 
-    def __init__(self, data=None, queryset=None, prefix=None, strict=None):
+    def __init__(self, data=None, queryset=None, prefix=None, strict=None, **kwargs):
         self.is_bound = data is not None
         self.data = data or {}
         if queryset is None:
